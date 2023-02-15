@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    FILL THE FORM! <BR> <BR>
+    <input type="email" id="email" name="email">
+    <label for="email">E-mail</label>
+    <br>
+    <input type="password" id="password" name="password">
+    <label for="password">Password</label>
+    <br>
+    <input type="text" id="name" name="name">
+    <label for="name">Name</label>
+    <br>
+    <input type="text" id="lastname" name="lastname">
+    <label for="lastname">Lastname</label>
+    <br>
+    <input type="date" id="dateofbirth" name="dateofbirth">
+    <label for="dateofbirth">Birthday</label>
+    <br>
+    <input type="text" id="telephonenumber" name="telephonenumber" maxlength="10" minlength="10">
+    <label for="telephonenumber">Telephone Number</label>
+    <br>
+    Choose your plan!
+    <ul>
+    <li>
+    <select name="planchooser" id="planchooser" name="planchooser">
+      <option value="Freeplan">Freeplan - 0$</option>
+      <option value="Lowplan">Lowplan - 5$</option>
+      <option value="Midplan">Midplan - 10$</option>
+      <option value="highplan">Highplan - 15$</option>
+    </select> </li>
+
+    <li>
+      <input type="checkbox" id="proplan" name="proplan"> <label for="proplan"> ...or Proplan - 25$ *THE BEST*</label> 
+    </li>
+  </ul>
+  <input type="text" id="creditcardnumber" name="creditcardnumber" maxlength="16" minlength="16">
+  <label for="creditcardnumber"> Insert your credit card number!</label>
+  <br>
+  <input type="text" id="cvc" name="cvc" maxlength="3" minlength="3">
+  <label for="cvc"> Insert CVC!</label>
+  <br>
+  <input type="date" id="dateofexpiration" name="dateofexpiration">
+  <label for="dateofexpiration"> Insert date of expiration!</label>
+  <br>
+  <input type="text" id="billingaddress" name="billingaddress">
+  <label for="billingaddress"> Insert billing address!</label>
+  </body>
+</html>
