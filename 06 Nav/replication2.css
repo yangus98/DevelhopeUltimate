@@ -1,0 +1,47 @@
+.navbar-style {
+    background-color: rgb(56, 52, 95);
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+h3 {
+    display: inline-block;
+}
+
+p {
+    display: inline-block;
+    padding-left: 80px;
+}
+
+a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+.inputset {
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 8%;
+}
+
+.buttonset {
+    height: 35px;
+    background-color: rgb(56, 52, 95);
+    color: yellowgreen;
+    border-color: yellowgreen;
+    border-radius: 20%;
+}
+
+h2{
+    padding: 10px;
+    display: inline-block;
+}
+
+select {
+    height: 0%;
+    width: 1%;
+    display: inline-block;
+    background-color: rgb(56, 52, 95);
+    color: white;
+}
