@@ -1,54 +1,83 @@
-.navbar-style {
-    background-color: rgb(56, 52, 95);
-    color: white;
-    display: inline-block;
-    width: 100%;
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
 }
 
-h3 {
-    display: inline-block;
+
+h2,
+ul,
+li,
+li>a
+{
+    color: white;
+    display: inline;
+}
+
+.navbar-right{
+    text-align: right;
+}
+
+
+nav {
+    background-color:rgb(49, 49, 103);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 15px;
 }
 
 a {
-    padding-left: 10px;
     text-decoration: none;
+    color: black;
+}
+
+li{
+    padding-left: 20px;
+}
+
+.bolder{
+    font-weight:bolder;
+}
+
+li:last-child{
+    color:darkgray;
+}
+
+select{
+    width: 4%;
+    background-color:rgb(49, 49, 103);
+    color: white;
+}
+.setinput,
+button {
+padding: 10px;
+}
+
+button{
+    background-color:rgb(49, 49, 103);
+    border-color: yellowgreen; 
+    color: yellowgreen; 
+}
+button:hover{
+    background-color: yellowgreen;
     color: white;
 }
 
-a:last-of-type {
-    color: gray;
+@media screen and (max-width:768px) {
+
+ ul,
+ .setinput,
+ button {
+    display: none;
+ }
+
+ .hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+ }
 }
 
-h2{
-    padding: 10px;
-    display: inline-block;
-}
-
-select {
-    height: 0%;
-    width: 3%;
-    display: inline-block;
-    background-color: rgb(56, 52, 95);
-    color: white;
-}
-
-div
-{
-display: inline-block;
-}
-
-.inputset {
-    height: 30px;
-    padding-left: 10px;
-    border-radius: 8%;
-    display: inline-block;
-}
-
-.buttonset {
-    height: 35px;
-    background-color: rgb(56, 52, 95);
-    color: yellowgreen;
-    border-color: yellowgreen;
-    border-radius: 20%;
-    display: inline-block;
-}
