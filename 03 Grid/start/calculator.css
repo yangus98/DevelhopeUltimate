@@ -1,0 +1,42 @@
+.grid-container{
+    display:grid;
+    width: 40vh;
+    grid-template-columns: repeat(4, 1fr);
+    border: solid 3px;
+    border-radius: 10px;
+    grid:
+    "result result result result"
+    "operators operators operators operators"
+    "numbers numbers numbers equal"
+    "numbers numbers numbers equal"
+    "numbers numbers numbers equal"
+    "numbers numbers numbers equal";
+}
+
+div {
+    border: solid darkgray 1px;
+}
+
+.result {
+    grid-column: span 4;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding: 5px;
+}
+
+.equal {
+    grid-row: span 4;
+    background-color: rgb(193, 79, 79);
+    font-size: 75px;
+}
+
+.operators {
+    background-color: skyblue;
+}
+
+.equal,
+.numbers,
+.operators{
+    text-align: center;
+}
