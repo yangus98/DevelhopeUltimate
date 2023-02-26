@@ -2,7 +2,7 @@
     display:grid;
     width: 40vh;
     grid-template-columns: repeat(4, 1fr);
-    border: solid 3px;
+    border: solid;
     border-radius: 10px;
     grid:
     "result result result result"
@@ -22,21 +22,17 @@ div {
     background-color: black;
     color: white;
     text-align: right;
-    padding: 5px;
+    padding: 2px;
 }
 
 .equal {
     grid-row: span 4;
     background-color: rgb(193, 79, 79);
-    font-size: 75px;
+    font-size: 30px;
 }
 
 .operators {
     background-color: skyblue;
-}
-
-.equal,
-.numbers,
-.operators{
     text-align: center;
 }
+
