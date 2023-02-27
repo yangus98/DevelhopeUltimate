@@ -5,7 +5,7 @@ div {
   padding: 20px;
 }
 div h1 {
-  text-decoration: underline;
+  text-decoration: underline blue;
   color: green;
 }
 div section, div article {
