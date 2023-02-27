@@ -5,7 +5,7 @@ $div-space:20px;
 $text-space:10px;
 
 div {
-  border: solid $color-primary;
+  border: solid $color-primary 1px;
   text-align: center;
   margin: $div-space;
   padding: $div-space;
@@ -16,21 +16,22 @@ div {
   }
 
   section {
-    border: solid $color-tertiary;
     display: inline-flex;
   }
 
   article {
-    @extend section;
+    
 
     .even {
       color: $color-secondary;
       padding: $text-space;
+      border: solid $color-tertiary 1px;
     }
 
     .odd {
       color: $color-primary;
       padding: $text-space;
+      border: solid $color-tertiary 1px;
     }
   }
 }
