@@ -1,0 +1,34 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+div {
+  border: solid $color-primary;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+
+  h1 {
+    text-decoration: underline;
+    color: $color-tertiary;
+  }
+
+  section {
+    border: solid $color-tertiary;
+    display: inline-flex;
+  }
+
+  article {
+    @extend section;
+
+    .even {
+      color: $color-secondary;
+      padding: 10px;
+    }
+
+    .odd {
+      color: $color-primary;
+      padding: 10px;
+    }
+  }
+}
