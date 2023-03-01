@@ -1,19 +1,19 @@
 .articolo-pari {
-  color: red;
   border-color: green;
   font-size: 1rem;
+  color: red;
 }
 
 .articolo-dispari {
-  color: blue;
   border-color: green;
   font-size: 1rem;
+  color: blue;
 }
 
 .ultimo-articolo {
-  color: green;
   border-color: blue;
   font-size: 24px;
+  color: green;
 }
 
 .upper-blocks {

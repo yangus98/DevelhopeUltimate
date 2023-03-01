@@ -1,33 +1,20 @@
-@mixin odd-article {
-    color: red;
-    border-color: green;
-    font-size: 1rem;
-}
-
-@mixin even-article{
-    color: blue;
-    border-color: green;
-    font-size: 1rem;
-
-}
-
-@mixin last-article{
-    color: green;
-    border-color: blue;
-    font-size: 24px;
-
+@mixin set-article($border-color:green, $font-size:1rem, $color:green) {
+border-color:$border-color;
+font-size: $font-size;
+color: $color;
 }
 
 .articolo-pari{
-    @include odd-article(); 
+@include set-article($color: red)
+
 }
 
 .articolo-dispari{
-    @include even-article();
+@include set-article($color: blue)
 }
 
 .ultimo-articolo{
-    @include last-article();
+@include set-article($border-color: blue, $font-size: 24px)
 }
 
 .upper-blocks{
