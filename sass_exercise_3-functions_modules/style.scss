@@ -1,4 +1,6 @@
 @use "variables.scss";
+@use "functions.scss";
+
 $cherry-color:variables.$cherry-color;
 $grass-color:variables.$grass-color;
 $sea-color:variables.$sea-color;
@@ -6,10 +8,6 @@ $spacing:variables.$spacing;
 $font-last-block:variables.$font-last-block;
 $main-font:variables.$main-font;
 
-@function to-rem($value) {
-$rem-value: ($value/16)+ rem;
-@return $rem-value;
-}
 
 @mixin odd-article {
     color: $cherry-color;
@@ -27,7 +25,7 @@ $rem-value: ($value/16)+ rem;
 @mixin last-article{
     color: $grass-color;
     border-color: $sea-color;
-    font-size: to-rem($font-last-block);
+    font-size: functions.to-rem($font-last-block);
 
 }
 
@@ -45,17 +43,17 @@ $rem-value: ($value/16)+ rem;
 
 .upper-blocks{
     display: inline-flex;
-    margin: to-rem($spacing);
+    margin: functions.to-rem($spacing);
 }
 
 .container{
     border: solid $cherry-color;
-    padding: to-rem($spacing);
+    padding: functions.to-rem($spacing);
 }
 
 article{
     border: solid;
-    padding: to-rem($spacing);
+    padding: functions.to-rem($spacing);
 }
 
 h1{
