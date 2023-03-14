@@ -4,8 +4,8 @@ class Person {
     this.lastName = lastName;
   }
 
-  static fromObject(){
-    let val = new Person("Mario", "Rossi")
+  static fromObject(obj){
+    let val = new Person(obj.firstName, obj.lastName)
     return val;
   }
 }
